@@ -3,6 +3,7 @@
 
 namespace App\Tests\kata_1;
 
+use App\kata_1\ActivityFactory;
 use App\kata_1\MyMorningRouting;
 use DateTimeImmutable;
 use Generator;
@@ -24,7 +25,7 @@ class MyMorningRoutingTest extends TestCase
      */
     public function itShouldShowMyMorningRouting(DateTimeImmutable $localTime, string $result): void
     {
-        $myMorningRouting = new MyMorningRouting($localTime);
+        $myMorningRouting = new MyMorningRouting($localTime, new ActivityFactory());
         $this->assertEquals($result, $myMorningRouting->whatShouldIDowNow());
     }
 }
