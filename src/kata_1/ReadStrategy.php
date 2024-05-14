@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace App\kata_1;
 
-final class StudyStrategy implements ActivityStrategy
+final class ReadStrategy implements ActivityStrategy
 {
 
     public function activity(): string
     {
-        return "Study";
+        return "Read";
     }
 }

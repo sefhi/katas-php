@@ -30,3 +30,23 @@ El sistema debería mostrar "Desayunar"
 Dado que la hora actual es antes de las 05:59 o después de las 09:00
 Cuando solicito la actividad a realizar
 El sistema debería mostrar "Sin actividad"
+
+### Mejora
+
+`De 06:00 a 06:59 - Hacer ejercicio`
+
+`De 07:00 a 07:29 - Leer`
+
+`De 07:30 a 07:59 - Estudiar`
+
+`De 08:00 a 08:59 - Desayunar`
+
+`De 06:00 a 06:44 - Hacer ejercicio`
+
+`De 06:45 a 06:59 - Ducharse`
+
+`De 07:00 a 07:29 - Leer`
+
+`De 07:30 a 07:59 - Estudiar`
+
+`De 08:00 a 09:00 - Desayunar`

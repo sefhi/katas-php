@@ -16,8 +16,14 @@ final readonly class MyMorningRouting
     public function whatShouldIDowNow(): string
     {
 
-        $hour = (int) $this->localTime->format('H');
+        $hour = (int)  $this->localTime->format('H');
+        $minute = (int)  $this->localTime->format('i');
+        $time = $hour.$minute;
 
-        return $this->activityFactory->create($hour)->activity();
+        if(strlen($time) <3) {
+            $time = (int)$time.'0';
+        }
+
+        return $this->activityFactory->create((int)$time)->activity();
     }
 }
