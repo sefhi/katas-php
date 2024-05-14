@@ -33,7 +33,7 @@ El sistema debería mostrar "Sin actividad"
 
 ### Mejora
 
-`De 06:00 a 06:59 - Hacer ejercicio`
+`De 06:00 a 06:44 - Hacer ejercicio`
 
 `De 07:00 a 07:29 - Leer`
 
@@ -41,12 +41,4 @@ El sistema debería mostrar "Sin actividad"
 
 `De 08:00 a 08:59 - Desayunar`
 
-`De 06:00 a 06:44 - Hacer ejercicio`
-
 `De 06:45 a 06:59 - Ducharse`
-
-`De 07:00 a 07:29 - Leer`
-
-`De 07:30 a 07:59 - Estudiar`
-
-`De 08:00 a 09:00 - Desayunar`
