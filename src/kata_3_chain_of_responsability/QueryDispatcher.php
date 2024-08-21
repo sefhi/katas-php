@@ -29,6 +29,11 @@ final class QueryDispatcher
 
         $next = fn (QueryInterface $query) => $handler($query);
 
+        foreach (array_reverse($this->middlewares) as $middleware) {
+            $next = fn($message) => $middleware->process($message, $next);
+        }
+
+
         return $next($queryMessage);
     }
 }

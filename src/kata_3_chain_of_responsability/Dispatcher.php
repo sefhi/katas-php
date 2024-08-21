@@ -8,7 +8,8 @@ final class Dispatcher
 {
     public function __invoke(): string
     {
-        $dispatcher = new QueryDispatcher();
+        $middleware = new ExampleMiddleware();
+        $dispatcher = new QueryDispatcher([$middleware]);
         $dispatcher->registerQueryHandler(GetUserQuery::class, new GetUserQueryHandler());
 
         return $dispatcher->query(new GetUserQuery());
